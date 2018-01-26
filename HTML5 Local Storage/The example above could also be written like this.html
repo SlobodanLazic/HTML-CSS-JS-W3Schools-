@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<div id="result"></div>
+
+<script type="text/javascript">
+// Check browser support
+if (typeof(Storage) !== "undefined") {
+	// Store
+	localStorage.lastname = "Smith";
+	// Retrieve
+	document.getElementById("result").innerHTML = localStorage.lastname;
+}
+</script>
+
+</body>
+</html>

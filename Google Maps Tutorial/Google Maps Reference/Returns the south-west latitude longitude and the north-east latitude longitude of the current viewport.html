@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<div id="map" style="width:100%;height:500px"></div>
+
+<p><button onclick="document.getElementById('demo').innerHTML = map.getBounds()">Get map bounds</button></p>
+
+<div id="demo"></div>
+
+<script type="text/javascript">
+var map;
+function myMap() {
+	var mapCanvas = document.getElementById("map");
+	var mapOptions = {
+		center: new google.maps.LatLng(51.508742, - 0.120850),
+		zoom: 6
+	};
+	map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUB_WJweg0m8kpKUJuCHvdqmLWyZ_RY54&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>

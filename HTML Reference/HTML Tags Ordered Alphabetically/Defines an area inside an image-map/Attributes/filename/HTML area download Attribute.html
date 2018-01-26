@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<p>Click on the sun or on one of the planets to download its content.</p>
+
+<img src="planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+
+<map name="planetmap">
+	<area shape="rect" coords="0,0,82,126" alt="Sun" href="information_about_the_sun.htm" download>
+	<area shape="circle" coords="90,58,3" alt="Mercury" href="merglobe.gif" download>
+	<area shape="circle" coords="124,58,8" alt="Venus" href="information_about_the_planet_venus.txt" download>
+</map>
+
+<p><b>Note:</b> The download attribute is not supported in IE, Safari or Opera version 12 (and earlier).</p>
+
+</body>
+</html>
